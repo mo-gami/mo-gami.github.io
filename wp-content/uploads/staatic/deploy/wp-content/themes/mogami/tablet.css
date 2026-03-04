@@ -1,0 +1,1791 @@
+/*
+Theme Name: kyabe2 craft
+Theme URI: http://kyabe2.com/themes/kyabe2-craft
+Author: kyabe2
+Author URI: http://kyabe2.com/
+Description: kyabe2
+Version: 1.0
+*/
+
+
+    html {
+        height: auto;
+    }
+
+    body{
+        width: auto;
+        height: auto;
+        height: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .translated-ltr {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 0px 0px;
+        color: #515151;
+    }
+
+    a:-webkit-any-link {
+        color: #515151;
+        cursor: pointer;
+        text-decoration: none;
+        /* font-size: 14px; */
+    }
+
+    /* テスト */
+    a:hover,
+    a:focus {
+        color: rgb(255, 170, 170);
+    }
+
+    .title a:hover,
+    a:focus {
+        color: #515151;
+    }
+
+    p:empty:before {
+        content: none !important;
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+        margin: 10px auto;
+        /* margin: 0px auto 10px auto; */
+        overflow: hidden;
+        background: skyblue;
+        background: white;
+    }
+
+/* フロントページ */
+    .front-content {
+        height: auto;
+        width: auto;
+        margin: 5px 50px 5px 50px;
+        padding: 5px 50px 5px 50px;
+        background: rgb(207, 213, 250);
+        background: white;
+    }
+
+    h1.title {
+        font-weight: bold;
+        font-size: 27px;
+        letter-spacing: 4px;
+        word-spacing: 2px;
+        font-family: 'Dosis', sans-serif;
+        color: #515151;
+    }
+
+    h1.title a:hover, a:focus {
+        color: #515151;
+    }
+
+    h1.title2 {
+        margin: 50px 0px 50px 15px;
+        background-size: contain;
+        width: 110px;
+        height: 19px;
+        display: block;
+    }
+
+    img.mogami {
+        width: 110px;
+    }
+
+    img.language-japanese,
+    img.language-english {
+        background-size: contain;
+        height: 19px;
+        display: block;
+    }
+
+    .language div {
+        margin: 0px 10px 0px 10px;
+    }
+
+    h6 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    /* p.title {
+        font-weight: bold;
+        font-size: 27px;
+        letter-spacing: 4px;
+        word-spacing: 2px;
+        font-family: 'Dosis', sans-serif;
+        color: #515151;
+    }
+
+    p.title a:hover, a:focus {
+        color: #515151;
+    } */
+
+    p.language {
+        display: flex;
+        float: right;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 6px;
+        font-family: 'Dosis', sans-serif;
+        color: #515151;
+        text-align: right;
+        margin-top: 2.5px;
+    }
+
+    ul.language {
+        display: flex;
+        float: right;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 6px;
+        font-family: 'Dosis', sans-serif;
+        color: #515151;
+        text-align: right;
+        margin-top: 2.5px;
+        line-height: 1;
+    }
+    
+    .cleartext2 {
+        text-indent:100%;
+        white-space:nowrap;
+        overflow:hidden;
+        display: none;
+    }
+
+    div.front-spacer {
+        clear: both;
+        height: 43% !important;
+    }
+
+
+/* header */
+
+        #header {
+            margin: 0;
+            width: auto;
+            height: 150px;
+            /* height: 0px; */
+            float: top;
+            position: relative;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 27px;
+            letter-spacing: 4px;
+            /* padding: 50px 0px 50px 50px; */
+            font-family: 'Dosis', sans-serif;
+            color: #515151;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+
+
+        .g_translation {
+            position: absolute;
+            position: relative; 
+            text-decoration: none;
+            font-weight: 550;
+            padding: 5px auto;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            width: auto;
+            height: 50px;
+            font-family: 'Dosis', sans-serif;
+            background-image: linear-gradient(-90deg,rgb(238,238,238) 0%,rgb(238,238,238) 94%,rgb(221,221,221) 100%);
+        }
+
+        
+        .clearText {
+            text-indent: none;
+            white-space: nowrap;
+            overflow: hidden;
+            display: none;
+        }
+
+        .drawer-menu {
+            display: block;
+            text-decoration: none;
+            font-weight:bold;
+            font-size: 14px;
+            letter-spacing: 4px;
+            word-spacing: 5px;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        a.glink:hover,
+        a.glink:focus {
+            color: rgb(255, 170, 170);
+        }
+
+        /* .inline-block{
+            display: inline-block;
+            background-color:  #ccc;
+            background: white;
+        } */
+
+        .bogo-language-switcher .current {  
+            display: none;  
+        }  
+
+
+/* navigation */
+
+    .navigation {
+        padding: 0px 0px 10px 0px;
+        font-size: 12px;
+        width: 40px;
+        margin: 0px auto;
+        text-align: center;
+        height: auto;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        display: block;
+        background-color: aquamarine;
+        background-color: white;
+    }
+
+        .prev {
+            float: left;
+            width: auto;
+            text-align: left;
+            font-size: 14px;
+            margin-right: 5px;
+            text-decoration: underline;
+            display: inline-block;
+            background-color:  #ccc;
+            background-color: white;
+        }
+
+        .next {
+            float: right;
+            width: auto;
+            text-align: right;
+            font-size: 14px;
+            margin-right: 8px;
+            text-decoration: underline;
+            display: inline-block;
+            background-color:  #ccc;
+            background-color: white;
+        } 
+
+        .prev2 {
+            /* float: left; */
+            width: auto;
+            /* text-align: left; */
+            font-size: 14px;
+            margin-right: 5px;
+            text-decoration: underline;
+            background-color:  #ccc;
+            background-color: white;
+        }
+
+        .next2 {
+            /* float: right; */
+            width: auto;
+            /* text-align: right; */
+            font-size: 14px;
+            margin: 0px 8px 0px 0px;
+            text-decoration: underline;
+            background-color:  #ccc;
+            background-color: white;
+        } 
+
+        /* パンくずを横並びに */
+        ul.page_navi {
+            list-style: none;
+            line-height: 20px; /* 文字の高さ */
+            display: flex;
+            text-align: left;
+            width: auto;
+            margin: 0 0 5px 5px;
+        }
+
+/* posts */
+    #posts {
+        height: auto;
+    }
+
+        .post {
+            margin-bottom: 30px;
+            display: inline;
+        }
+
+            .post-header {
+                border-left: none !important;
+                width: 95%;
+                margin: 0 auto;
+                /* height: 70px; */
+                display: inline-block;
+                display: block;
+                /* background: rosybrown;
+                background: white; */
+            }
+
+            /* Breadcrumb NavXT */
+            .breadcrumbs {
+                padding-bottom: 15px;
+                margin: 0px 0px 0px 10px;
+                color: #3D3937;
+                cursor: pointer;
+                font-size: 12px;
+            }
+
+            a.home {
+                text-decoration: underline;
+            }
+
+            p#breadcrumbs {
+                padding-bottom: 15px;
+                margin: 0px 0px 0px 10px;
+                color: #3D3937;
+                color: #C0C0C0;
+                cursor: pointer;
+                font-size: 12px;
+            }
+
+            p#breadcrumbs span a  {
+                color: #C0C0C0;
+                cursor: pointer;
+            }
+
+    /* 検索バー */
+                 .searchbox {
+                    text-align: center;
+                    letter-spacing: 0;
+                    margin-bottom: 15px;
+                    margin: 0 auto;
+                    display: inline;
+                    line-height: 1.4em;
+                    width: 2.2em;
+                    height: 50px;
+                    box-shadow: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    overflow: hidden;
+                    background: thistle;
+                    background: white;
+                }
+    
+                input#submit.btn-submit {
+                    display: inline;
+                    background: url('https://mo-gami.github.io/mo-gami.github.io/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+                    border: none;
+                    text-indent: -9999px;
+                    box-shadow: none;
+                    width: 2.2em;
+                }
+    
+                .searchbox #s {
+                    width: 156px;
+                    width: 75%;
+                    border: none;
+                    line-height: 18px;
+                    background: none;
+                    padding: 6px 0px;
+    
+                }
+    
+                .searchbox div {
+                    display: inline-block;
+                    border: #CCC solid 1px;
+                    -webkit-border-radius: 14px;
+                    -moz-border-radius: 14px;
+                    border-radius: 14px;
+                    width: 204px;
+                    margin-bottom: 3px;
+                    overflow: hidden;
+                }
+
+            .nosearch-box {
+                text-align: left;
+                overflow: hidden;
+                width: 730px;
+                width: auto;
+                height: 270px;
+                border-left: none;
+                padding: 0px 10px 0px 10px;
+                padding: auto;
+                background: rgb(222, 135, 135);
+                background: white;
+            }
+
+            .nosearch1 {
+                font-size: 22px;
+                display: block;
+                margin-bottom: 30px;
+                height: auto;
+            }
+
+            .nosearch2 {
+                display: block;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .nosearch3 {
+                display: block;
+                float: left;
+                background-color: white;
+                width: auto;
+            }
+
+            .post-meta {
+                    font-size: 12px;
+                    color: #515151;
+                    float: right;
+                    overflow: hidden;
+                    width: auto;
+                    text-align: left;
+            }
+
+
+            .post-content {
+                overflow: hidden;
+                /* width: 730px; */
+                width: 97.8%;
+                width: 92%;
+                /* width: auto; */
+                height: 100%;
+                height: auto;
+                border-left: none !important;
+                padding: 0px 3px 0px 0px;
+                margin: 0px auto;
+                display: block;
+                background: burlywood;
+                background: white;
+            }
+
+            .post-body {
+                margin-left: 115px;
+            }
+
+            pre {
+                margin: 0px !important;
+            }
+
+    /* p3d.in */
+            div.p3din {
+                width: 99% !important;
+                height: 600px !important;
+                box-shadow: 0 0 5px 5px #DDD;
+                margin: 0px auto 30px auto !important;
+            }            
+
+    /* sketchfab */
+            .sketchfab-embed-wrapper {
+                width: 98% !important;
+                height: 98% !important;
+                height: 500px !important;
+                box-shadow: 0 0 5px 5px #DDD;
+                margin: 0px auto 30px auto !important;
+
+            }        
+
+    /* 写真 */
+            .wp-block-image img {
+                vertical-align:top !important;
+            }
+
+            div.thumbnail img {
+                background: rgb(236, 236, 236);
+                max-width: 100%;
+                width: 100%!important;
+                height: 100% !important;  
+            }
+
+            .link01 img {
+                background: rgb(236, 236, 236);
+                max-width: 100%;
+                width: 100%!important;
+                height: 100% !important;  
+            }
+
+            .thumbnail {
+                padding-bottom: 5px !important;
+            }
+
+            .wp-block-image img {
+                max-width: 100%;
+                width: 100%!important;
+            }
+
+            img.wp-image-1287 {
+                width: 100px !important;
+            }
+
+            figure {
+                display: block !important;
+                display: flex !important;
+                margin: 0 auto !important;
+                width: 92%!important;
+                height: 92% !important;
+            }
+
+            figure.wp-block-image.is-resized {
+                width: 92%!important;
+                height: auto !important;
+                max-width: 100%!important;
+                margin: 0 auto !important;
+            }
+      
+            .wp-block-image .alignleft {
+                display: block !important;
+                float: none !important;
+                height: 92% !important;
+                height: auto !important;
+            }
+
+            .wp-block-image {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                height: 92% !important;
+                height: auto !important;
+            }
+
+            .wp-block-column {
+                flex-basis: 100%!important;
+                margin: 0 auto !important;
+            }
+
+            .wp-block-columns {
+                margin: 0 auto !important;
+                flex-wrap: nowrap !important;
+            }
+
+            /* .space1 {
+                padding-bottom: 20px;
+            } */
+
+            a.link01:-webkit-any-link {
+                width: 100%;
+                height: 100%;
+            }
+
+    /* イライ */
+            a.Request-button01 {
+                text-decoration:underline;
+                /* border-radius: 0;
+                text-align: center;
+                background: #333;
+                width: 200px;
+                height: 30px;
+                margin-left: 20px;
+                padding: 8px;
+                color: #FFF;
+                font-size: 11px;
+                text-decoration: none;
+                line-height: 1.4em;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; */
+            }
+
+            h5.Request-button01 {
+                font-size: 14px;
+                width: 400px;
+                display: inline-block; 
+                height: 30px;
+            }
+
+            figure.Request-icon01{
+                float: right !important;
+            }
+
+            img.wp-image-2060 {
+                position: relative;
+                bottom: 32px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2061 {
+                position: relative;
+                bottom: 35px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2062 {
+                position: relative;
+                bottom: 35px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2063 {
+                position: relative;
+                bottom: 32px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2064 {
+                position: relative;
+                bottom: 32px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2065 {
+                position: relative;
+                bottom: 32px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2066 {
+                position: relative;
+                bottom: 32px;
+                left: 70%;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
+            img.wp-image-2804 {
+                height: 200px !important;
+                /* width: 217px !important; */
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2803 {
+                height: 100% !important;
+                /* height: 90px !important; */
+                width: 100% !important;
+                /* width: 300px !important; */
+            }
+
+            img.wp-image-2018 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2019 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2020 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2021 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2022 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2023 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2016 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2032 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2033 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2034 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2035 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2036 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2037 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2038 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2039 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2031 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1944 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1945 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1946 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1947 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1948 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1949 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1950 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1956 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1962 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1963 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1964 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1961 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1930 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1931 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1929 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+            
+            img.wp-image-1876 {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2473  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2475  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2474  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2476  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2472  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2471  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2464  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2465  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2466  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2467  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2468  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2469  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2470  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2511  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2339  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2340  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2341  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2356  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2342  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2336  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2337  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-2338  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1495  {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            img.wp-image-1681{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1682{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1683{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1680{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1786{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1679{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1678{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1676{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1523{
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1443 {
+                /* width: 170% !important;
+                height: 150% !important; */
+                width: 150px !important;
+                height: 150px !important;
+            }
+
+            img.wp-image-1448 {
+                width: 100%;
+                height: 100% !important;
+            }
+
+            img.wp-image-1456 {
+                width: 100%;
+                height: 100% !important;
+            }
+
+            .thumbnail3 {
+                max-width: initial !important;
+                width: 98% !important;
+                /* height: 98% !important; */
+                box-shadow: inset 0 0 3px 3px #DDD !important;
+            }
+
+            p.title01 {
+                /* display: inline-block;
+                margin-left: 37%;
+                margin-right: auto;
+                width: 100%;
+                font-size: 14px; */
+                font-size: 14px;
+                background: none;
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
+
+            p.title02 {
+                font-size: 14px;
+                background: none;
+                padding-top: 5px;
+            }
+
+            p.title03 {
+                display: inline-block;
+                margin-left: 37%;
+                margin-right: auto;
+                width: 100%;
+                font-size: 14px;
+                background: none;
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
+
+            p.title04 {
+                position: relative;
+                padding-top: 5px;
+
+                font-size: 14px;
+                background: none;
+                padding-bottom: 20px;
+            }
+
+
+    /* single(個別記事) */
+            .dwlink_box {
+                float: right;
+                position: relative;
+                right: -0.5%;
+                width: 120px !important;
+                height: 40px !important;
+            }
+
+            .wp-block-button__link {
+                border-radius: 0!important;
+                display: block !important;
+                font-family: Arial, Helvetica, sans-serif !important;
+                text-align: center !important;
+                background: #333;
+                /* width: 120px !important;
+                height: 40px !important; */
+                margin: 0;
+                padding: 5px !important;
+                color: #FFF !important;
+                font-size: 11px !important;
+                text-decoration: none !important;
+                line-height: 1.4em !important;
+            }
+
+            img.wp-image-1342 {
+                width: 75% !important;
+                height: 98% !important;
+                width: 98% !important;
+                height: 98% !important;
+                margin: 5px 10px 30px 5px !important;
+                /* box-shadow: 0 0 5px 5px #DDD !important; */
+            }
+
+            img.wp-image-1341 {
+                width: 75% !important;
+                height: 98% !important;
+                width: 98% !important;
+                height: 98% !important;
+                margin: 5px 10px 30px 5px !important;
+                box-shadow: 0 0 5px 5px #DDD !important;
+            }
+
+            .papercraft {
+                width: 98% !important;
+                height: 98% !important;
+                margin: 5px 10px 30px 5px !important;
+                box-shadow: 0 0 5px 5px #DDD;
+            }
+
+    /* 作り方 */
+            .howtomake h3 {
+                /* padding-top: 10px; */
+                text-align: center;
+                letter-spacing: normal;
+                margin-left: 5px !important;
+                font-size: 16px;
+                padding: 10px 0px 0px 0px;
+                background: none;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif
+            }
+
+            .profile h3 {
+                text-align: center;
+                letter-spacing: normal;
+                font-size: 14px;
+                padding: 4px 0px 20px 0px;
+                background: none;
+                font-weight: normal;
+                font-family: Arial, Helvetica, sans-serif
+            }
+
+            div figure.thumbnail2 {
+                max-width: initial !important;
+                width: 100% !important;
+                box-shadow: inset 0 0 3px 3px #DDD !important;
+                background: white !important;
+            }
+
+            .wp-block-image .alignright {
+                width: 92% !important;
+                height: 92% !important;
+                height: auto !important;
+                box-shadow: inset 0 0 3px 3px #DDD !important;
+                display: block !important;
+            }
+
+            .wp-block-image .aligncenter  {
+                width: 92% !important;
+                height: 92% !important;
+                height: auto !important;
+                box-shadow: inset 0 0 3px 3px #DDD !important;
+                display: block !important;
+            }
+
+            .wp-block-image .alignleft  {
+                width: 92% !important;
+                height: 92% !important;
+                height: auto !important;
+                box-shadow: inset 0 0 3px 3px #DDD !important;
+                display: block !important;
+            }
+
+            figure.howtomake {
+                width: auto !important;
+                /* height: 100px !important; */
+                text-align: center;
+                margin-left: 5px !important;
+                float: left !important;
+                font-size: 16px;
+            }
+
+            /* .howtomake figcaption {
+                width: auto !important;
+                height: auto !important;
+                text-align: center;
+                margin-left: 5px !important;
+               
+                font-size: 16px;
+            } */
+
+            .howtomake {
+                display:block !important;
+            }
+
+            div.wp-block-columns  {
+                display: flex;
+                max-width: 100% !important;
+            }
+
+            .wp-block-image figcaption {
+                margin: 0px !important;
+            }
+
+            figure.howtomake2 {
+                width: 70% !important;
+                height: auto !important;
+                text-align: center;
+                float: right !important;
+                margin-top: 20px;
+                display: block;
+                position: relative;
+            }
+
+            figure.howtomake3 {
+                width: 100% !important;
+                height: 100% !important;
+                width: 300px !important;
+                height: 120px !important;
+                margin-left: 5px !important;
+                float: left !important;
+                font-size: 16px;
+            }
+
+            figure.howtomake4 {
+                padding: 25% 0px 0px 5px !important;
+                float: left !important;
+                font-size: 16px;
+            }
+
+            figure.howtomake5 {
+                padding: 8% 0px 0px 5px !important;
+                font-size: 16px;
+                width: 100% !important;
+            }
+
+            figure.howtomake9 {
+                width: 70% !important;
+                float: left !important;
+            }
+  
+            .wp-block-image .howtomake5 {
+                padding: 24px 0px 0px 0px !important;
+            }
+
+            .howtomake4 {
+                display: inline-block;
+            }
+
+            .wp-block-column .howtomake5 {
+                /* padding-top: 55px !important; */
+                padding-top: 28% !important;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif !important;
+                letter-spacing : normal;
+            }
+
+            .wp-block-image .howtomake6 {
+                /* left: 60%; */
+                width: 100% !important;
+                height: 100% !important;
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+            .wp-block-column .howtomake7 {
+                /* padding: 29px 0px 0px 0px !important; */
+                padding-top: 10% !important;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif !important;
+            }
+
+            /* .wp-block-column .howtomake8 {
+                padding: 55px 0px 0px 0px !important;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif !important;
+                letter-spacing : normal;
+            } */
+
+            .howtomake_box {
+                width: 100% !important;
+                margin: 10px 0px 20px 0px !important;
+                padding: 15px 2px !important;
+                box-shadow: inset 0 0 3px 3px #DDD;
+                background : none;
+                display: block;
+            }
+
+            .howtomake_box2  {
+                width: 100% !important;
+                margin: 10px 0px 20px 0px !important;
+                padding: 15px 2px !important;
+                box-shadow: inset 0 0 3px 3px #DDD;
+                display: block;
+            }
+
+    /* 文章 */
+            h1 {
+                margin-block-start:0px;
+                margin-block-end: 0px;
+                
+            }
+
+            .entry-title {
+                padding-top: 5px;
+                padding-left: 10px;
+                color: #3D3937;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+                font-weight: normal;
+            }
+
+            .entry-title a {
+                /* padding: 10px 0px 0px 10px; */
+                margin-block-start: 0px;
+                font-size: 13px;
+                width: 90%;
+            } 
+
+            .column1st .entry-content {
+                padding-top: 0px;
+                padding-bottom: 10px;
+                font-family: "Yu Gothic";
+                font-weight: 800;
+                font-size: 13px;
+            }
+
+            .column1st .entry-content2 {
+                padding-top: 0px;
+                padding-bottom: 10px;
+                font-family: "Yu Gothic";
+                font-weight: 800;
+                font-size: 13px;
+            }
+
+            .entry-header .entry-title {
+                padding-top: 17px;
+                padding-left: 0px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .entry-header .entry-title3 {
+                padding-left: 0px;
+                font-size: 18px;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+                font-weight: normal;
+                /* font-weight: 600; */
+            }
+
+
+            .column1st .entry-content {
+                /* padding-bottom: 10px; */
+                font-family: "Yu Gothic";
+                font-weight: 600;
+                font-size: 13px;
+            }
+            
+            .column1st .entry-content2 {
+                /* padding-top: 35px; */
+                padding-left: 10px;
+                padding-bottom: 10px;
+                font-family: "Yu Gothic";
+                font-weight: 600;
+                font-size: 13px;
+            }
+
+            .column1st div.entry-content2 {
+                padding-left: 0px !important;
+            }
+
+            .column2st .entry-content {
+                font-family: "Yu Gothic";
+                font-weight: 600;
+                padding-bottom: 5px;
+                line-height: 1.4em;
+            }
+
+            .column2st .entry-content2 {
+                font-family: "Yu Gothic";
+                font-weight: 600;
+                padding-bottom: 5px;
+                line-height: 1.4em;
+            }
+
+            .column2st .entry-content3 {
+                padding-top: 0px;
+                font-family: "Yu Gothic";
+                font-weight: 600;
+                padding-bottom: 5px;
+                line-height: 1.4em;
+            }
+
+            .column2st footer {
+                font-family: "Yu Gothic";
+                font-weight: normal;
+            }
+
+            .entry-content p {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: #3D3937;   
+                font-family: "Helvetica Neue",Arial,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+                line-height: 1.7em !important;
+                font-size: 1.1em;
+                font-weight: normal;
+            }
+
+            div.entry-content3 {
+                padding-top: 60px;
+                padding-bottom: 10px;
+                color: #3D3937;   
+                font-family: "Helvetica Neue",Arial,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+                line-height: 1.7em !important;
+                font-size: 1.1em;
+                font-weight: normal;
+            }
+
+            .entry-content a:-webkit-any-link {
+                text-decoration: underline;
+            }
+
+            .column1st {
+                list-style: none;
+                padding-left: 0px;
+                width: 92% !important;
+                height: auto !important;
+                /* padding-top: 10px; */
+                padding-bottom: 20px;
+                font-size: 14px;
+                margin: 0px 0px 0px 10px;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+            } 
+
+            .column2st {
+                list-style: none;
+                padding-left: 10px;
+                width: 92% !important;
+                height: auto !important;
+                /* padding-top: 10px; */
+                padding-bottom: 20px;
+                font-size: 14px;
+                margin: 0px 0px 0px 10px;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+            } 
+
+            
+            .wp-block-column .column2st {
+                margin: 0px 0px 0px 0px;
+            } 
+
+            .wp-block-column section .column2st {
+                margin: 0px 0px 0px 0px !important;
+                /* line-height: 1.3em; */
+            }
+
+            h4 {
+                font-size: 18px !important;
+                font-weight: normal !important;
+                color: #3D3937 !important;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+            }             
+
+            h5 {
+                margin-block-start:0px;
+                margin-block-end: 0px;
+                margin-top: 20px;
+                font-weight: 600;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+                font-size: 15px;
+            }
+
+            h2.entry-title2 {
+                padding-top: 30px;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            }
+
+            h2 {
+                margin-block-start: 0em !important;
+                margin-block-end: 0em !important;
+                font-size: 16px !important;
+            }
+
+            h2.entry-title3 {
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                padding-top: 20px !important;
+                font-size: 16px;
+                font-weight: 600 !important;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            }
+
+            .entry-header .entry-title4 {
+                padding-top: 0px;
+                font-size: 16px;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+                font-weight: 600;
+            }
+
+            h2.entry-title5 {
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                padding-top: 0px !important;
+                padding-top: 20px !important;
+                font-size: 16px;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+                font-weight: 600;
+            }
+
+
+            .entry-content .profile {
+                padding-top: 0px;
+                padding-bottom: 10px;
+                color: #3D3937;    
+                font-family: "Helvetica Neue",Arial,"游ゴシック",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+                line-height: 1.7em !important;
+                font-size: 1.1em;
+            }
+
+            .wp-block-preformatted {
+                white-space: normal !important;
+            }
+
+            pre {
+                white-space: normal !important;
+            }
+
+            .wp-block-code code {
+                white-space: normal !important;
+            }
+
+            .about {
+                line-height: 25px !important;
+            }
+
+            /* .column2st {
+                list-style: none;
+                padding-left: 0px;
+                margin-top: 10px;
+                line-height: 25px;
+                letter-spacing: 1px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                color: #3D3937;
+                font-size: 12px !important;
+            } */
+
+            .entry-header ul {
+                /* text-align: left; */
+                list-style: none;
+                padding-left: 0px;
+                width: 92% !important;
+                height: auto !important;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                font-size: 14px;
+                margin: 0px 0px 0px 0px;
+                font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+            }
+
+            p{
+                margin: 0 auto;
+                width: auto !important;
+                color: #3D3937;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                /* background-color: rgb(204, 252, 206);
+                background-color: white; */
+            }
+
+            .p2 {
+                width: 92% !important;
+                width: 97% !important;
+                display: block;
+                padding-bottom: 20px;
+                margin: 0 auto;
+                color: #3D3937;
+            }
+
+            strong {
+                font-family: "Yu Gothic";
+                font-weight: 800;
+                font-size: 14px;
+                text-align: left;
+                color: #3D3937;
+            }
+
+            .profile {
+                padding-bottom: 5px;
+                font-size: 13px;
+                color: #3D3937;    
+                font-family: Arial, Helvetica, sans-serif;    
+            }
+
+            p.profile2 {
+                padding-bottom: 5px;
+            }
+
+
+
+    /* コンタクトフォーム */
+            .cf7 {
+                font-size: 14px !important;
+                line-height: 0;
+            }
+
+            input#form-name,
+            input#form-mail,
+            input#form-title,
+            input.wpcf7-text {
+                font-family: inherit;
+                font-family: "Yu Gothic" !important;
+                font-size: inherit;
+                font-weight: inherit;
+                font-size: 100%;
+                width: 50%;
+                margin-bottom: 15px;            
+            }
+
+            button#form-button {
+                margin-top: 10px;
+            }
+
+            label.cf7 {
+                font-family: inherit;
+                font-family: "Yu Gothic" !important;
+                font-size: inherit;
+                font-weight: 600;
+                font-size: 100%;
+                width: 100%;
+                margin-bottom: 7px;
+            }
+
+            textarea {
+                margin-top: 4px;
+                height: 300px;
+                width: 50%;
+            }
+
+            label.cf7-2 {
+                font-size: 14px !important;
+                font-family: "Yu Gothic" !important;
+                margin: 0 auto;
+                text-align: center;
+                float: left;
+            }
+
+            .cf7-2 {
+                /* display: inline-block; */
+                display: inline-flex;
+             }
+
+            p.contact01 {
+                width: 50% !important;
+                display: block;
+                font-size: 14px !important;
+                font-family: "Yu Gothic" !important;
+                line-height: 20px;
+                padding-bottom: 0px !important;
+                margin: 0 !important;
+            }
+
+            p.contact02 {
+                width: 50% !important;
+                display: block;
+                font-size: 14px !important;
+                font-family: "Yu Gothic" !important;
+                padding-bottom: 2px !important;
+                font-weight: 600;
+                margin: 0 !important;
+            }
+
+            p.contact03 {
+                width: 50% !important;
+                display: block;
+                font-size: 14px !important;
+                font-family: "Yu Gothic" !important;
+                line-height: 20px;
+                padding-bottom: 0px !important;
+                margin: 0 !important;
+                padding-bottom: 15px !important;
+            }
+
+            /* p.contact03 {
+                font-family: inherit;
+                font-size: inherit;
+                font-weight: inherit;
+                font-size: 100%;
+                width: 50% !important;
+                margin-bottom: 15px;  
+            }     */
+
+            div.wpcf7 input[type="file"] {
+                cursor: pointer;
+                margin-bottom: 15px;
+            } 
+
+
+  
+            /* sidebar */
+            .menu {
+                font-size: 12px;
+                list-style: none;
+                overflow: hidden;
+                padding: 0;
+                float: left;
+                width: auto;
+                display: inline-block;
+                float: top;
+            }
+            
+            .menu > li {
+                width: 150px;
+                width: auto;
+            }
+
+            .menu a {
+                text-align: left;
+                letter-spacing: 2px;
+                color: #515151;
+                width: 100%;
+                width: 160px;
+                padding: 15px 0px 15px 13px;
+                text-decoration: none;
+                display: inline-block;
+                border-bottom: 1px solid #EEE;
+                font-family: "Yu Gothic";
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+
+/* 疑似クラス */
+        .menu a:visited,
+        .menu a:hover,
+        .menu a:active,
+        .menu a:focus {
+            outline: none;
+            z-index: inherit;
+        } 
+
+            .widget h3 {
+                text-indent:100%;
+	            white-space:nowrap;
+                overflow:hidden;
+            }
+
+            .widget li {
+                padding: 0px 0px 30px 0px;
+                letter-spacing: 2px;
+                font-size: 12px;
+                font-family: "Yu Gothic";
+            }
+
+            .widget li a:hover {
+                padding: 0px 0px;
+                border-left: solid 5px black;
+            } 
+
+        /* footer */
+
+            #footer {
+                /* color: #aaa;
+                text-align: right;
+                height: 100px;
+                border-top: 1px solid #ccc; */
+            }
+
+            h7 {
+                width: 100%;
+                margin: auto;
+                font-size: 12px;
+                color: #3D3937;
+                text-align: center;
+                float: center;
+                display: block;
+            }
+
+              a.twitter {
+                font-family: 'Dosis', sans-serif;
+                letter-spacing: 2px;
+                padding: 15px 50px 0px 0px;
+                margin: auto;
+                font-size: 16px;
+                color: #aaa;
+                color: #515151;
+                float: right;
+                text-decoration: underline;
+            }
+        
+            a.twitter:hover, :focus {
+                color: rgb(255, 170, 170);
+            }
+        
+            div.copyright {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0px 50px 0px 0px;
+                margin: auto;
+                font-size: 14px;
+                color: #515151;
+                text-align: right;
+                /* float: right; */
+                width: 100%;
+            }
