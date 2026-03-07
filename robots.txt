@@ -3,6 +3,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mo-gami.github.io/sitemap_index.xml
+Sitemap: http://localhost:82/sitemap_index.xml
 # ---------------------------
 # END YOAST BLOCK

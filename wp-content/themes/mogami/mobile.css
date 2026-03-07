@@ -213,8 +213,9 @@ Version: 1.0
 
         p#breadcrumbs {
             padding-bottom: 15px;
-            color: #3D3937;
-            color: #C0C0C0;
+            /* color: #3D3937; */
+            /* color: #C0C0C0; */
+            color: #ffffff;
             cursor: pointer;
             font-size: 12px;
         }
@@ -225,86 +226,12 @@ Version: 1.0
         } */
 
         p#breadcrumbs span a  {
-            color: #C0C0C0;
+            /* color: #C0C0C0; */
+            color: #ffffff;
             cursor: pointer;
         }
 
-     /* 検索バー */
-            .searchbox {
-                text-align: center;
-                letter-spacing: 0;
-                /* margin-bottom: 15px; */
-                display: inline;
-                line-height: 1.4em;
-                width: 2.2em;
-                height: 50px;
-                box-shadow: none;
-                font-family: Arial, Helvetica, sans-serif;
-                overflow: hidden;
-            }
 
-            input#submit.btn-submit {
-                display: inline;
-                background: url('https://mo-gami.github.io/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
-                border: none;
-                text-indent: -9999px;
-                box-shadow: none;
-                width: 2.2em;
-                height: 17px;
-            }
-
-            .searchbox #s {
-                width: 156px;
-                width: 75%;
-                border: none;
-                line-height: 18px;
-                background: none;
-                padding: 6px 0px;
-
-            }
-
-            .searchbox div {
-                display: inline-block;
-                border: #CCC solid 1px;
-                -webkit-border-radius: 14px;
-                -moz-border-radius: 14px;
-                border-radius: 14px;
-                width: 204px;
-                /* margin-bottom: 10px; */
-                overflow: hidden;
-            }
-
-            .nosearch-box {
-                text-align: left;
-                overflow: hidden;
-                height: auto;
-                padding: 0px 10px;
-                margin: 0px auto;
-                background: rgb(222, 135, 135);
-                background: white;
-            }
-
-            .nosearch1 {
-                font-size: 22px;
-                display: block;
-                margin-bottom: 30px;
-                height: auto;
-                background-color: white;
-            }
-
-            .nosearch2 {
-                display: block;
-                height: auto;
-                margin-bottom: 10px;
-                background-color: white;
-            }
-
-            .nosearch3 {
-                width: auto;
-                float: left;
-                background-color: rgb(255, 167, 167);
-                background-color: white;
-            }
         
 /* navigation */
     .navigation {
@@ -367,7 +294,7 @@ Version: 1.0
             display: flex;
             text-align: left;
             width: auto;
-            margin: 0 0 5px 5px;
+            margin: 0 0 25px 5px;
         }
 
 /* posts */
@@ -1242,7 +1169,7 @@ Version: 1.0
             }
 
             .entry-title {
-                padding-top: 5px;
+                /* padding-top: 5px; */
                 color: #3D3937;
                 font-family: "Helvetica Neue", Arial, 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
                 font-weight: normal;
@@ -1782,3 +1709,275 @@ Version: 1.0
                     padding: 0px 0px;
                     border-left: solid 5px black;
                 } 
+
+
+
+/* -----------------------------------------------------------
+   1. フロントページのみ有効にする設定
+----------------------------------------------------------- */
+
+/* 要素の非表示 */
+.home .g_translation, 
+.home .bogo-language-switcher, 
+.home .title2, 
+.home #header.container, 
+.home #header {
+    display: none !important;
+}
+
+/* Body設定 */
+body.home {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: block;
+}
+
+/* メインコンテンツ */
+.home #main.container {
+    padding: 0;
+    width: 100%;
+}
+
+.home .front-content-wrapper {
+    padding: 80px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.home .mogami {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.home .language-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.home .language-japanese, 
+.home .language-english {
+    width: auto;
+    display: block;
+    margin: 0 !important;
+}
+
+.home .separator {
+    display: none !important;
+}
+
+/* フッター */
+.home #footer.container {
+    position: relative !important;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0 100px 0; 
+    margin: 0;
+}
+
+.home .footer-col {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    padding: 0 !important;
+}
+
+.home .col-right { order: 1; }
+.home .col-center { order: 2; }
+.home .col-left { display: none; }
+
+.home .copyright-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #3D3937;
+    text-align: center;
+}
+
+.home .col-right a.twitter {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #515151;
+    text-decoration: underline;
+}
+
+
+/* -----------------------------------------------------------
+   1. 検索バー 基本デザイン（共通）
+----------------------------------------------------------- */
+.searchbox {
+    text-align: center;
+    letter-spacing: 0;
+    display: inline;
+    line-height: 1.4em;
+    width: 2.2em;
+    height: 50px;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input.btn-submit {
+    display: inline;
+    background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+    border: none;
+    text-indent: -9999px;
+    box-shadow: none;
+    width: 2.2em;
+}
+
+.searchbox #s {
+    width: 75%;
+    border: none;
+    line-height: 18px;
+    background: none;
+    padding: 6px 0px;
+}
+
+.searchbox div {
+    display: inline-block;
+    border: #CCC solid 1px;
+    border-radius: 14px;
+    width: 204px;
+    overflow: hidden;
+}
+
+/* -----------------------------------------------------------
+   2. 固定ページ：レイアウト設定
+----------------------------------------------------------- */
+.page .searchbox-wrapper, .search .searchbox-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    float: none !important;
+}
+
+.page .custom-nav-inline, .search .custom-nav-inline {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    font-size: 1.1em;
+    color: #3D3937;
+}
+
+.page #pagination-top-links, .search #pagination-top-links { 
+    order: 2;
+    padding-left: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.page .bottom-nav, .search .bottom-nav { 
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 20px 0 !important; 
+}
+
+.page .clickable-link, .search .clickable-link { text-decoration: underline !important;}
+/* .page .clickable-link.nav-arrow { color: #333; } */
+/* .page .page-number.current { font-weight: bold; color: #333; } */
+
+.page .searchbox, .search .searchbox {
+    order: 1;
+    float: none !important;
+    text-align: center !important; 
+    width: 100% !important;
+    display: block !important;
+}
+
+.page .searchform, .search .searchform {
+    display: inline-block !important;
+    margin: 0 auto !important;
+}
+
+.page .searchform div, .search .searchform div {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.page #s, .search #s {
+    width: 200px !important;
+    max-width: 60vw;
+    padding: 6px 6px !important;
+}
+
+/* -----------------------------------------------------------
+   4. 追加：スマホ用 検索結果表示（縦並び）設定
+----------------------------------------------------------- */
+#search-results-container {
+    display: none; 
+    width: 100%;
+    padding: 0 10px;
+}
+
+.is-searching #paginate-target { display: none !important; }
+.is-searching #search-results-container { display: block !important; }
+
+.search-result-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.search-result-item .wp-block-column {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.search-info-bar {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -----------------------------------------------------------
+   5. ナビゲーション全体のコンテナ
+----------------------------------------------------------- */
+.page_navi {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-indent: 0 !important;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #3D3937;
+}
+
+.page_navi li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.page_navi li a {
+    text-decoration: underline;
+}
+
+#breadcrumbs {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
+}

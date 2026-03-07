@@ -238,78 +238,6 @@ Version: 1.0
             display: none;  
         }  
 
-
-/* navigation */
-
-    .navigation {
-        padding: 0px 0px 10px 0px;
-        font-size: 12px;
-        width: 40px;
-        margin: 0px auto;
-        text-align: center;
-        height: auto;
-        font-family: "Open Sans", Helvetica, Arial, sans-serif;
-        display: block;
-        background-color: aquamarine;
-        background-color: white;
-    }
-
-        .prev {
-            float: left;
-            width: auto;
-            text-align: left;
-            font-size: 14px;
-            margin-right: 5px;
-            text-decoration: underline;
-            display: inline-block;
-            background-color:  #ccc;
-            background-color: white;
-        }
-
-        .next {
-            float: right;
-            width: auto;
-            text-align: right;
-            font-size: 14px;
-            margin-right: 8px;
-            text-decoration: underline;
-            display: inline-block;
-            background-color:  #ccc;
-            background-color: white;
-        } 
-
-        .prev2 {
-            /* float: left; */
-            width: auto;
-            /* text-align: left; */
-            font-size: 14px;
-            margin-right: 5px;
-            text-decoration: underline;
-            background-color:  #ccc;
-            background-color: white;
-        }
-
-        .next2 {
-            /* float: right; */
-            width: auto;
-            /* text-align: right; */
-            font-size: 14px;
-            margin: 0px 8px 0px 0px;
-            text-decoration: underline;
-            background-color:  #ccc;
-            background-color: white;
-        } 
-
-        /* パンくずを横並びに */
-        ul.page_navi {
-            list-style: none;
-            line-height: 20px; /* 文字の高さ */
-            display: flex;
-            text-align: left;
-            width: auto;
-            margin: 0 0 5px 5px;
-        }
-
 /* posts */
     #posts {
         height: auto;
@@ -336,6 +264,7 @@ Version: 1.0
                 padding-bottom: 15px;
                 margin: 0px 0px 0px 10px;
                 color: #3D3937;
+                /* color: #ffffff; */
                 cursor: pointer;
                 font-size: 12px;
             }
@@ -347,96 +276,19 @@ Version: 1.0
             p#breadcrumbs {
                 padding-bottom: 15px;
                 margin: 0px 0px 0px 10px;
-                color: #3D3937;
-                color: #C0C0C0;
+                /* color: #3D3937; */
+                /* color: #C0C0C0; */
+                color: #ffffff;
                 cursor: pointer;
                 font-size: 12px;
             }
 
             p#breadcrumbs span a  {
-                color: #C0C0C0;
+                /* color: #C0C0C0; */
+                color: #ffffff;
                 cursor: pointer;
             }
 
-    /* 検索バー */
-                 .searchbox {
-                    text-align: center;
-                    letter-spacing: 0;
-                    margin-bottom: 15px;
-                    margin: 0 auto;
-                    display: inline;
-                    line-height: 1.4em;
-                    width: 2.2em;
-                    height: 50px;
-                    box-shadow: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    overflow: hidden;
-                    background: thistle;
-                    background: white;
-                }
-    
-                input#submit.btn-submit {
-                    display: inline;
-                    background: url('https://mo-gami.github.io/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
-                    border: none;
-                    text-indent: -9999px;
-                    box-shadow: none;
-                    width: 2.2em;
-                }
-    
-                .searchbox #s {
-                    width: 156px;
-                    width: 75%;
-                    border: none;
-                    line-height: 18px;
-                    background: none;
-                    padding: 6px 0px;
-    
-                }
-    
-                .searchbox div {
-                    display: inline-block;
-                    border: #CCC solid 1px;
-                    -webkit-border-radius: 14px;
-                    -moz-border-radius: 14px;
-                    border-radius: 14px;
-                    width: 204px;
-                    margin-bottom: 3px;
-                    overflow: hidden;
-                }
-
-            .nosearch-box {
-                text-align: left;
-                overflow: hidden;
-                width: 730px;
-                width: auto;
-                height: 270px;
-                border-left: none;
-                padding: 0px 10px 0px 10px;
-                padding: auto;
-                background: rgb(222, 135, 135);
-                background: white;
-            }
-
-            .nosearch1 {
-                font-size: 22px;
-                display: block;
-                margin-bottom: 30px;
-                height: auto;
-            }
-
-            .nosearch2 {
-                display: block;
-                height: auto;
-                margin-bottom: 10px;
-            }
-
-            .nosearch3 {
-                display: block;
-                float: left;
-                background-color: white;
-                width: auto;
-            }
 
             .post-meta {
                     font-size: 12px;
@@ -1494,7 +1346,7 @@ Version: 1.0
                 font-weight: 600;
             }
 
-
+            pre.wp-block-preformatted .profile,
             .entry-content .profile {
                 padding-top: 0px;
                 padding-bottom: 10px;
@@ -1743,3 +1595,267 @@ Version: 1.0
                 padding: 0px 0px;
                 border-left: solid 5px black;
             } 
+
+
+
+/* -----------------------------------------------------------
+   1. フロントページのみ有効にする設定
+----------------------------------------------------------- */
+
+/* 要素の非表示 */
+.home .g_translation, 
+.home .bogo-language-switcher, 
+.home .title2, 
+.home #header.container, 
+.home #header {
+    display: none !important;
+}
+
+/* ページ全体の基本設定 */
+body.home {
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: block; 
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* メインコンテンツエリア */
+.home #main.container {
+    width: 100%;
+    padding: 0;
+}
+
+.home .front-content-wrapper {
+    padding: 380px 0 30vh 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home .mogami {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    padding-left: 50px;
+}
+
+.home .language-selector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 50px;
+}
+
+/* フッター設定 */
+.home #footer.container {
+    position: relative !important;
+    width: 100%; 
+    display: flex !important;
+    align-items: center; 
+    z-index: 9999;
+    padding: 0 0 100px 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home .footer-col {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.home .col-left { visibility: hidden; }
+.home .col-center { justify-content: center; }
+.home .col-right { justify-content: flex-end; padding-right: 50px; }
+
+.home .copyright-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #3D3937;
+    white-space: nowrap;
+}
+
+.home .col-right a.twitter {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #515151;
+    text-decoration: underline;
+    line-height: 1 !important;
+    white-space: nowrap;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ===========================================================
+   3. 固定ページ：タブレット・スマホ用レイアウト (1024px以下)
+=========================================================== */
+@media screen and (max-width: 1024px) {
+
+    /* -----------------------------------------------------------
+        1. 検索バー 本体のデザイン (PC基準を継承)
+    ----------------------------------------------------------- */
+
+    .page .searchbox, .search .searchbox {
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important; 
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .page .searchbox div, .search .searchbox div {
+        display: flex !important; 
+        align-items: center;
+        border: #CCC solid 1px;
+        -webkit-border-radius: 14px;
+        -moz-border-radius: 14px;
+        border-radius: 14px;
+        width: 204px;
+        height: 32px; 
+        margin: 0 auto 3px auto !important;
+        overflow: hidden;
+        background: white;
+    }
+
+    .page .searchbox #s, .search .searchbox #s {
+        width: 156px !important;
+        border: none !important;
+        line-height: 18px;
+        background: none !important;
+        padding: 4px 10px !important;
+        outline: none;
+        font-size: 13px;
+        flex-grow: 1;
+    }
+
+    input.btn-submit {
+        display: inline-block !important;
+        background: url('/wp-content/themes/mogami/img/icon-search2.png') no-repeat center center;
+        border: none;
+        text-indent: -9999px;
+        box-shadow: none;
+        width: 2.2em;
+        cursor: pointer;
+    }
+
+    /* -----------------------------------------------------------
+        2. 固定ページ：レイアウト共通・PC用
+    ----------------------------------------------------------- */
+
+    .page .searchbox-wrapper, .search .searchbox-wrapper {
+        display: flex !important;
+        flex-direction: column !important; 
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    /* -----------------------------------------------------------
+        3. 固定ページ：タブレット・スマホ用レイアウト (配置入れ替え)
+    ----------------------------------------------------------- */
+
+    .page .searchbox, .search .searchbox {
+        order: 1 !important;
+    }
+
+    .page #pagination-top-links, .search #pagination-top-links {
+        order: 2 !important;
+        padding-left: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    /* --- 追加：検索結果（縦並び）用の制御 --- */
+
+    #search-results-container {
+        display: none; 
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .is-searching #paginate-target { 
+        display: none !important; 
+    }
+
+    .is-searching #search-results-container { 
+        display: block !important; 
+    }
+
+    .search-result-item {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        line-height: 1.8;
+        text-align: left; 
+    }
+
+    .search-result-item .wp-block-column {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .search-info-bar {
+        font-size: 13px;
+        margin-bottom: 20px;
+        padding: 10px 0;
+        border-bottom: 2px solid #333;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* -----------------------------------------------------------
+        4. ページナビ共通設定
+    ----------------------------------------------------------- */
+    .page .custom-nav-inline, .search .custom-nav-inline {
+        display: flex !important;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        gap: 10px;
+        font-size: 1.1em;
+        color: #3D3937;
+        justify-content: center !important;
+        margin: 20px 0 !important;
+    }
+
+    .page .clickable-link, .search .clickable-link { text-decoration: underline !important;}
+    /* .page .clickable-link.nav-arrow { color: #333; } */
+    /* .page .page-number.current { font-weight: bold; color: #333; } */
+
+    .page_navi {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 0 20px 0;
+        text-indent: 0 !important; 
+        justify-content: center; 
+        font-size: 1.1em;
+        color: #3D3937;
+    }
+
+    .page_navi li {
+        list-style: none;
+        margin-right: 15px;
+    }
+
+    .page_navi li a {
+        text-decoration: underline;
+    }
+
+    #breadcrumbs {
+        margin-top: 30px;
+        font-size: 0.9em;
+    }
+}
